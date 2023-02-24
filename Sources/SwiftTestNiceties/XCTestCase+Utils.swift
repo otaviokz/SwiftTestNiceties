@@ -8,7 +8,7 @@
 import Foundation
 import XCTest
 
-extension XCTestCase {
+public extension XCTestCase {
     static var defaultTimeout: TimeInterval { 10 }
 
     func waitForExpectationWithPredicate(timeout: TimeInterval = defaultTimeout, evaluation: @escaping () -> Bool) {
